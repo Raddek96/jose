@@ -1,0 +1,98 @@
+* {
+    margin: auto;
+    padding: auto;
+    font-family: 'Young Serif', serif;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(https://versinlimitesaccesibilidad.com/wp-content/uploads/20180417_182053.jpg);
+    background-size: cover; /* La imagen se ajustará para cubrir completamente el div sin distorsión */
+    background-position: center; /* La imagen se centrará dentro del div */
+}
+
+.titulo {
+    text-align: center;
+    flex-wrap: wrap;
+    padding: 20px;
+
+}
+
+hr {
+    width: 500px;
+    height: 5px;
+    background-color: red;
+    margin: 10px auto;
+}
+.container {
+    display: flex;
+    width:  1600px;
+    height: auto;
+    background: darkslateblue;
+    border: 10px solid black;
+
+    
+}
+
+.item {
+    background: red;
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+    min-width: 300px;
+    min-height: 300px;
+    background-size: cover; /* La imagen se ajustará para cubrir completamente el div sin distorsión */
+    background-position: center; /* La imagen se centrará dentro del div */
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+img {
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+    min-width: 300px;
+    min-height: 300px;
+    max-width: 300px;
+    max-height: 300px;
+    object-fit: cover; 
+
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover; /* O cualquier otro valor como "cover" o "fill" según tu preferencia */
+    border: 7px solid red;
+    transition: all 0.5s;
+   
+}
+img:hover {
+    min-width: 320px;
+    min-height: 320px;
+    max-width: 320px;
+    max-height: 320px;
+    border-radius: 30px;
+    border-color: yellow;
+    cursor: pointer;
+}
+
+footer {
+    background: grey;
+    margin: 30px 10px 0px 10px;
+   
+}
+ul {
+    display: flex;
+    list-style: none;
+    gap: 5em;
+    padding: 20px;
+}
+
+.parrafo {
+    margin: 10px;
+}
+
+img:active {
+    min-width: 500px;
+    min-height: 500px;
+    z-index: 100;
+
+}
