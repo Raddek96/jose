@@ -33,6 +33,13 @@ hr {
     
 }
 
+.container-mobile {
+    display: none;
+
+
+    
+}
+
 .item {
     background: red;
     width: 300px;
@@ -96,3 +103,20 @@ img:active {
     z-index: 100;
 
 }
+
+
+@media screen and (max-width: 500px) {
+   .container {
+     display: none;
+   }
+   .container-mobile {
+    display: flex;
+    flex-direction: column;
+    width:  500px;
+    height: auto;
+    background: darkslateblue;
+    border: 10px solid black;
+
+   }
+  }
+  
